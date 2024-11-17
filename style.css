@@ -1,0 +1,166 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: #E8ECD7; 
+    color: #1F4529; 
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: #1F4529; 
+    color: #E8ECD7; 
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E8ECD7; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E8ECD7; 
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #EED3B1; 
+}
+
+
+.home {
+    height: 100vh;
+    background: url('./images/home-background.jpg') center/cover no-repeat;
+ 
+    color: #E8ECD7; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 69, 41, 0.6); 
+    z-index: 1;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.home-pic {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #47663B; }
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #EED3B1; }
+
+.intro p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #E8ECD7;
+    padding: 20px;
+    border: 2px solid #47663B; 
+    border-radius: 10px;
+}
+
+.profile-pic {
+    max-width: 150px;
+    border-radius: 50%;
+    border: 3px solid #47663B; 
+}
+
+
+.timeline {
+    margin: 20px 0;
+    padding: 0;
+}
+
+.timeline-item {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 4px solid #47663B; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    color: #1F4529; 
+}
+
+.timeline-item p {
+    color: #47663B; 
+}
+
+
+.contact ul {
+    list-style: none;
+    text-align: center;
+}
+
+.contact ul li {
+    margin: 10px 0;
+}
+
+.contact ul a {
+    text-decoration: none;
+    color: #47663B; 
+    font-weight: bold;
+}
+
+.contact ul a:hover {
+    color: #EED3B1; 
+}
+
+
+footer {
+    background: #1F4529; 
+    color: #E8ECD7;
+    text-align: center;
+    padding: 10px 0;
+}
